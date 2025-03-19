@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function setColor(where, newColor){
+            if(where == "background"){
+                document.body.style.backgroundColor = newColor;
+            } else {
+                document.body.style.color = newColor;
+            }
+        }
+    </script>
+</head>
+<body>
+    <p style="font-family: 'Times New Roman', Times, serif; font-style: italic; font-size: 24pt">This small page illusrates dynamic setting of the foreground and background colors for a document</p>
+    <form action="">
+        <label for="background">Background color</label>
+        <input type="text" id="background" onchange="setColor('background', this.value)">
+        <br><br>
+        <label for="foreground">Foreground color</label>
+        <input type="text" name="foreground" id="foreground" onchange="setColor('foreground', this.value)">
+    </form>
+</body>
+</html>

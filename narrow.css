@@ -1,0 +1,350 @@
+body {
+    background-image: linear-gradient(to right, white, silver, white);
+}
+
+article {
+    background-image: linear-gradient(to right, white, silver, white);
+}
+
+header{
+    background-image: linear-gradient(to right, white, silver, white);
+}
+header h1 {
+    margin-bottom: 0.0em;
+}
+
+header p {
+    margin-top: 0.0em;
+}
+
+.account {
+    padding: 7px;
+    float: right;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation {
+    display: block;
+    background-image: linear-gradient(to right, gray, silver);
+    text-decoration: none;
+    color: black;
+    padding: 3px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    display: block;
+    margin-top: 10px;
+}
+
+#content1 {
+    height: 300px;
+    width: 100%;
+    background-image: url(Anne.png);
+    background-size: cover;
+    margin-top: 10px;
+}
+
+#content1 a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    top: 240px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    padding: 16px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+
+#content1 a:hover {
+    text-decoration: underline;
+}
+
+#content2 {
+    height: 300px;
+    width: 100%;
+    background-image: url(dune.png);
+    background-size: cover;
+    margin-top: 10px;
+}
+
+#content2 a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    top: 240px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    padding: 16px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+
+#content2 a:hover {
+    text-decoration: underline;
+}
+
+#content3 {
+    height: 300px;
+    width: 100%;
+    background-image: url(Prince.png);
+    background-size: cover;
+    margin-top: 10px;
+}
+
+#content3 a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    top: 240px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    padding: 16px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+
+#content3 a:hover {
+    text-decoration: underline;
+}
+
+#content4 {
+    height: 300px;
+    width: 100%;
+    background-image: url(universe.png);
+    background-size: cover;
+    margin-top: 10px;
+}
+
+#content4 a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    top: 240px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    padding: 16px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+
+#content4 a:hover {
+    text-decoration: underline;
+}
+
+#content5 {
+    height: 300px;
+    width: 100%;
+    background-image: url(history.png);
+    background-size: cover;
+    margin-top: 10px;
+}
+
+#content5 a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    top: 240px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    padding: 16px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+
+#content5 a:hover {
+    text-decoration: underline;
+}
+
+aside {
+    width: 300px;
+    height: 420px;
+    background-image: url(kindle.png);
+    background-size: cover;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 300px;
+}
+
+.book {
+    padding-top: 21.5px;
+    position: relative; 
+}
+
+.book_content {
+    display: none;
+    position: absolute; 
+    top: 100%; 
+    left: 0;
+    z-index: 1; 
+    width: 150px;
+    flex-direction: column;
+}
+
+.book:hover .book_content {
+    display: flex;
+    background-image: linear-gradient(to right, lightgray, silver, white);
+}
+.book_content a {
+    color: black;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.book_content a:hover{
+    text-decoration: underline;
+}
+
+.new {
+    padding-top: 21.5px;
+    position: relative; 
+}
+
+.new_content {
+    display: none;
+    position: absolute; 
+    top: 100%; 
+    left: 0;
+    z-index: 1; 
+    width: 150px;
+    flex-direction: column;
+}
+
+.new:hover .new_content {
+    display: flex;
+    background-image: linear-gradient(to right, lightgray, silver, white);
+}
+
+.new_content a {
+    color: black;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.new_content a:hover{
+    text-decoration: underline;
+}
+
+.homepage {
+    padding-top: 21.5px;
+    position: relative; 
+}
+
+.homepage_content {
+    display: none;
+    position: absolute; 
+    top: 100%; 
+    left: 0;
+    z-index: 1; 
+    width: 150px;
+    flex-direction: column;
+}
+
+.homepage:hover .homepage_content {
+    display: flex;
+    background-image: linear-gradient(to right, lightgray, silver, white);
+}
+.homepage_content a {
+    color: black;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.homepage_content a:hover{
+    text-decoration: underline;
+}
+
+.review {
+    padding-top: 21.5px;
+    position: relative; 
+}
+
+.review_content {
+    display: none;
+    position: absolute; 
+    top: 100%; 
+    left: 0;
+    z-index: 1; 
+    width: 150px;
+    flex-direction: column;
+}
+
+.review:hover .review_content {
+    display: flex;
+    background-image: linear-gradient(to right, lightgray, silver, white);
+}
+.review_content a {
+    color: black;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.review_content a:hover{
+    text-decoration: underline;
+}
+
+.other {
+    padding-top: 21.5px;
+    position: relative; 
+}
+
+.other_content {
+    display: none;
+    position: absolute; 
+    top: 100%; 
+    left: 0;
+    z-index: 1; 
+    width: 150px;
+    flex-direction: column;
+}
+
+.other:hover .other_content {
+    display: flex;
+    background-image: linear-gradient(to right, lightgray, silver, white);
+}
+
+.other_content a {
+    color: black;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.other_content a:hover{
+    text-decoration: underline;
+}
+
+.contact {
+    padding-top: 21.5px;
+    position: relative; 
+}
+
+.contact_content {
+    display: none;
+    position: absolute; 
+    top: 100%; 
+    left: 0;
+    z-index: 1; 
+    width: 150px;
+    flex-direction: column;
+}
+
+.contact:hover .contact_content {
+    display: flex;
+    background-image: linear-gradient(to right, lightgray, silver, white);
+}
+.contact_content a {
+    color: black;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.contact_content a:hover{
+    text-decoration: underline;
+}
+
+

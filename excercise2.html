@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function factorial (number){
+            var multiple = 1;
+            for (var i = 2; i <= number; i++){
+                multiple *= i;
+            }
+            return multiple;
+        }
+
+        function sum (number){
+            var sum = 0;
+            for(var i = 1; i <= number; i++){
+                sum += i;
+            }
+            return sum;
+        }
+
+        function leap_year (number){
+            if(number%400 == 0 || (number%4 == 0 && number%100 != 0)){
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        var number = prompt("Enter a number", "0");
+
+        var fact = factorial(number);
+        document.write("The factorial of " + number + " is " + fact);
+
+        var sum = sum(number);
+        document.write("<br>The sum of all number from 1 to " + number + " is " + sum);
+
+        if(leap_year(number)){
+            document.write("<br>" + number + " is leap year");
+        } else {
+            document.write("<br>" + number + " is not leap year");
+        }
+
+    </script>
+</body>
+</html>

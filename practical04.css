@@ -1,0 +1,80 @@
+body { 
+    font-family: 'Open Sans', sans-serif; 
+}
+h1 {
+font-size: 2.0em; color: Navy; margin-top: 1em;
+}
+h2 {
+font-size: 1.8em; color: Navy;
+}
+nav ol { 
+    
+}
+nav li { 
+    background-color: #AAB;
+    padding-left: 1em;
+    width: 60px;
+}
+nav li a {
+    background-color: #CCD;
+} 
+nav li a:hover { 
+    background-color: yellow;
+}
+
+.part1 {
+    background-color: lightyellow;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 0.0em;
+    margin-right: 0.0em;
+    border-radius: 1em;
+}
+
+.department {
+    margin-bottom: 0.0em;
+}
+
+.department-list {
+    margin-top: 0.0em;
+    padding-left: 1.0em;
+}
+ol.custom-list {
+    counter-reset: section; 
+    list-style-type: none;
+    padding-left: 0;
+}
+ol.custom-list li {
+    display: block;
+}
+ol.custom-list li:before {
+    content: counters(section, ".") ". "; 
+    counter-increment: section;
+}
+ol.custom-list li ol {
+    counter-reset: subsection;
+    padding-left: 0; 
+}
+ol.custom-list li ol li:before {
+    content: counters(section, ".") "." counters(subsection, ".") ". ";
+    counter-increment: subsection;
+}
+
+dt {
+    background-color: navy;
+    color: white;
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+    margin-left: 0;
+}
+
+dd {
+    background-color: #CCD;
+    color: black;
+    border-radius: 0 0 10px 10px;
+    padding: 10px;
+    margin-left: 0;
+    margin-bottom: 0.5em;
+    
+}

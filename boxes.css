@@ -1,0 +1,15 @@
+
+body{
+    width: 400px;
+    height: 400px;
+}
+#outer-box{
+    padding: 50px;
+    background-color: teal;
+}
+#inner-box{
+    width: 200px;
+    height: 200px;
+    background-color: salmon;
+    border: 50px solid pink;
+}

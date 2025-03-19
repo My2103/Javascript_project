@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function clickMe(){
+            var name = document.getElementById("name").value;
+            
+            if(name ==""){
+                alert("Please fill out this field")
+            } else {
+           document.getElementById("greeting").innerHTML = "Hello <strong>" + name + "!</strong>";
+        }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="name">
+    <input type="button" value="Ok" onclick="clickMe()">
+    <p id="greeting"></p>
+</body>
+</html>

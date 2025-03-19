@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function checkPassword(){
+            var initial = document.getElementById("initial");
+            var second = document.getElementById("second");
+
+            if(initial.value == ""){
+                alert("You did not enter password");
+                initial.focus();
+                return false;
+            }
+
+            if(initial.value != second.value){
+                alert("The two password is not the same");
+                initial.focus();
+                initial.select();
+                return false;
+            } else {
+                return true;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h3>Password input</h3>
+<form id="myForm" action="">
+    <label for="initial">Your password</label>
+    <input type="password" name="initial" id="initial">
+    <br><br>
+    <label for="second">Verify password</label>
+    <input type="password" name="second" id="second">
+    <br><br>
+    <input type="reset" name="reset">
+    <input type="submit" name="" id="submit">
+</form>
+     <script>
+        document.getElementById("second").onblur = checkPassword;
+        document.getElementById("myForm").onsubmit = checkPassword;
+     </script>
+</body>
+</html>

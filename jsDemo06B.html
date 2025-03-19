@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> var i = Number(prompt("Input :"))
+        /* Complete the following three lines of code with assignments that correspond to the computations performed in the Java program */ 
+        var d = Math.sqrt(i);
+        var e = 4 /d;
+        var f = Math.round(e);
+        document.writeln("sqrt(" + i +") = " + d + "<br>");
+        document.writeln("4/" + d + " = " + e + "<br>");
+        document.writeln("round(" + e + ") = " + f + "<br>");
+        document.writeln(e + " > 0 : " + (e > 0) + "<br>");
+        document.writeln(e + " <= 0 : " + (e <= 0) + "<br>");
+        for (d = 0.4; d < 0.7; d = d + 0.1) {
+        var r = i + d * Math.sign(i);
+        document.writeln("round(" + r + ") = " + Math.round(r) + "<br>");
+    }
+    </script>
+</body>
+</html>

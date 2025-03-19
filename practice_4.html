@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function moveIt(move, newTop, newLeft){
+            dom = document.getElementById(move).style;
+
+            dom.top = newTop + "px";
+            dom.left= newLeft + "px";
+        }
+    </script>
+</head>
+<body>
+<form>
+    <label for="x">x coordinate</label>
+    <input type="text" id="x" size="3">
+    <br><br>
+    <label for="y">y coordinate</label>
+    <input type="text" id="y" size="3">
+    <br><br>
+    <input type="button" value="Move it" onclick="moveIt('testImg', document.getElementById('y').value, 
+    document.getElementById('x').value)">
+</form>
+
+<div id="testImg" style="position: absolute; top: 300px; left: 500px">
+    <img src="lion.png" alt="Picture of a lion">
+</div>
+</body>
+</html>

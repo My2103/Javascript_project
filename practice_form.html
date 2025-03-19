@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Form Demo</h1>
+    <form action="shirt_page.php">
+    <!--First name-->
+    <label for="firstname">First Name:</label>
+    <input name="firstname" id="firstname" type="text">
+    <br><br>
+
+    <!--Last name-->
+    <label for="lasttname">Last Name:</label>
+    <input name="lastname" id="lastname" type="text">
+    <br><br>
+
+    <!--Type of shirt-->
+    <label for="type of shirt"><b>Type of Shirt:</b></label>
+    <select name="type of shirt" id="type of shirt">
+        <option value="Sleeveless">Sleeveless</option>
+        <option value="Short Sleeve">Short Sleeve</option>
+        <option value="Long Sleeve">Long Sleeve</option>
+    </select>
+    <br><br>
+
+    <!--Size-->
+    <label for="size"><b>Size:</b></label>
+    <input type="radio" id="small" name="size">
+    <label for="small">Small</label>
+    <input type="radio" id="large" name="size">
+    <label for="large">Large</label>
+    <input type="radio" id="medium" name="size">
+    <label for="medium">Medium (default)</label>
+    <br><br>
+
+    <!--Color-->
+    <label for="color"><b>Color:</b></label>
+    <input type="checkbox" id="red" name="color">
+    <label for="red">Red (default)</label>
+    <input type="checkbox" id="navy" name="color">
+    <label for="navy">Navy</label>
+    <input type="checkbox" id="black" name="color">
+    <label for="black">Black</label>
+    <br><br>
+
+    <!--Comment-->
+    <label for="comment"><b>Comment?</b></label><br>
+    <textarea name="comment" id="comment" style="height: 100px;"></textarea>
+    <br>
+    <!--Summit button-->
+    <input type="submit">
+    <!--Reset button-->
+    <input type="submit" value="Reset button">
+
+    </form>
+</body>
+</html>

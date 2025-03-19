@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Attribute Selector</title>
+</head>
+
+<style>
+    a[target="_blank"]{
+        color: green;
+    }
+
+    a:not([target="_blank"]){
+        color: red;
+    }
+</style>
+<body>
+    <h1>Attribute Selector</h1>
+    <h2>Css element has attribute target=_blank is GREEN</h2>
+    <h2>Css element without attribute target=_blank is RED</h2>
+    <ul>
+        <li><a href="" target="_blank">Link with blank</a></li>
+        <li><a href="">Link without blank</a></li>
+        <li><a href="" target="_blank">Link with blank</a></li>
+        <li><a href="">Link without blank</a></li>
+        <li><a href="" target="_blank">Link with blank</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html> <html lang="en-GB">
+<head>
+<title>HTML Forms</title>
+</head> 
+<body>
+<h1>HTML Forms</h1> 
+<form method="get" action="https://cgi.csc.liv.ac.uk/~ullrich/COMP519/examples/process.php"> 
+<p>What fruit do you like?</p>
+<fieldset>
+<label>
+    <input type="checkbox" name="fruit[]" value="a"> Apples
+    <input type="checkbox" name="fruit[]" value="o"> Oranges
+    <input type="checkbox" name="fruit[]" value="p"> Peaches
+</label> 
+</fieldset>
+<p>Please select your preferred contact method:<p>
+<fieldset>
+<input type="radio" id="cc1" name="contact" value="email">
+<label for="cc1">Email</label> 
+<input type="radio" id="cc2" name="contact" value="phone">
+<label for="cc2">Phone</label>
+<input type="radio" id="cc3" name="contact" value="mail">
+<label for="cc3">Mail</label>
+</fieldset>
+<input type="submit" value="Submit"> 
+</form> 
+</body>
+</html>

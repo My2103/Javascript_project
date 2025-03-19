@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html lang='en-GB'> 
+    <!-- File: page05A.html
+    Creation: 2019-10-11
+    Description: Forms -->
+    <head> 
+        <title>Forms</title>
+    </head> 
+    <style>
+        input[type=text], input[type=password]{
+            width: 10em;
+            padding: 1em;
+            margin: 0.5em;
+            border: 1px solid black;
+        }
+
+        label {
+            display: block;
+            padding-top: 4px;
+            text-align: center;
+            background-color: lightblue;
+            width: 200px;
+            transform: translate(-5%, 0%);
+        }
+
+        input[type=submit]{
+            background-color: lightgreen;
+            border: none;
+            width: 15em;
+            padding: 1em;
+            transform: translate(-5%, 0%);
+
+        }
+    </style>
+    <body>
+        <h1>HTML Forms</h1> 
+    <form method="post" action="https://cgi.csc.liv.ac.uk/~ullrich/COMP519/examples/process.php"> 
+        <input type="hidden" name="role" value="student">
+        <label>User ID: 
+            <br>
+            <input type="text" name="id" value="sgxyz" required>
+        </label>
+        <label>Password: 
+            <br>
+            <input type="password" name="password" required>
+        </label>
+        <input type="submit" value="Login"> 
+    </form>
+    </body> 
+</html>

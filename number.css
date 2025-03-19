@@ -1,0 +1,17 @@
+div {
+    display: flex;
+    flex-direction: row-reverse;
+    border: 0.5em solid #698733;
+    border-radius: 1em;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    width: 500px;
+}
+img {
+    width: auto;
+    height: 70%;
+}
+#number2{
+    order: 1;
+}

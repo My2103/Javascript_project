@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+    <script src="form.js"></script>
+</head>
+<body>
+<form  id="my-form" action="">
+    <h1>Registration form</h1>
+    <div>
+    <!--Student ID-->
+    <label for="studentID">Student ID</label>
+    <br>
+    <input type="text" name="studentID" id="studentID" required>
+
+    <!--Full Name-->
+    <label for="name">Full Name</label>
+    <br>
+    <input type="text" name="name" id="name" required>
+    </div>
+
+    <div>
+    <!--Date of birth-->
+    <label for="birthday">Date of birth</label>
+    <br>
+    <input type="date" name="birthday" id="birthday">
+
+    <!--Gender-->
+    <label for="gender">Gender</label>
+    <br>
+    <input type="radio" name="gender" id="male" value="Male">
+    <label for="male">Male</label>
+    <input type="radio" name="gender" id="female" value="Female">
+    <label for="female">Female</label>
+    </div>
+
+    <div>
+        <!--Subject list-->
+        <label for="subject_list">Subjects list</label>
+        <br>
+        <select name="subject_list" id="subject_list" size="8" multiple required>
+            <option value="Introduction to Programming">Introduction to Programming</option>
+            <option value="A+ Comprehensive">A+ Comprehensive</option>
+            <option value="Web Authoring">Web Authoring</option>
+            <option value="Introduction to Database Design">Introduction to Database Design</option>
+            <option value="Client-Side Scripting">Client-Side Scripting</option>
+            <option value="Programming I">Programming I</option>
+            <option value="Project Management and Project+">Project Management and Project+</option>
+            <option value="Introduction to C++">Introduction to C++</option>
+            <option value="Network+">Network+</option>
+            <option value="Information System Management">Information System Management</option>
+        </select>
+    </div>
+
+    <div id="list_button">
+        <input type="button" value=">" class="registered_button" onclick="addList()">
+        <br>
+        <input type="button" value="<" class="registered_button" onclick="removeList()">
+        <br>
+        <input type="button" value=">>" class="registered_button" onclick="addTwoList()">
+        <br>
+        <input type="button" value="<<" class="registered_button" onclick="removeTwoList()">
+    </div>
+
+    <div>
+        <label for="registration_list">Registration list</label>
+        <br>
+        <select name="registration_list" id="registration_list" size="8" style="width: 200px; height: 138px;" multiple>
+        </select>
+    </div>
+
+    <!--Submit button-->
+    <input type="submit" value="Submit" onclick="submitData(event)" class="submit">
+    <input type="button" value="Registered table" onclick="registeredData()" class="submit">
+
+    <!--Data table-->
+    <table id="dataTable">
+        <tr>
+            <td class="table_row">studentID</td>
+            <td class="table_row">Full name</td>
+            <td class="table_row">DoB</td>
+            <td class="table_row">Gender</td>
+        </tr>
+    </table>  
+
+    <!--Information board-->
+      <div id="infoBoard" class="board">
+        <div class="board_content">
+            <h1>Information</h1>
+            <p id="studentIDInfo">Student ID: </p>
+            <p id="nameInfo">Full name: </p>
+            <p id="birthdayInfo">Date of Birth: </p>
+            <p id="genderInfo">Gender: </p>
+            <p>Registered subject:</p>
+            <ul id="subjectList" style="list-style-type:circle;">
+                <!--Subject registered will be list-->
+            </ul>
+            <button class="close" type="button" onclick="closeBoard()">Close</button>
+        </div>
+      </div>
+</form>
+</body>
+</html>

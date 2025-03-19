@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function Submit() {
+        // Get the form element
+        const form = document.querySelector('form');
+
+        // Prevent the default form submission behavior
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            // Display the success message
+            const successMessage = document.createElement('p');
+            successMessage.textContent = 'Welcome back!';
+            successMessage.style.textAlign = 'center';
+            document.body.appendChild(successMessage);
+        });
+    }
+</script>
+<style>
+    form{
+        border: 1px solid black;
+        padding: 50px;
+        background-image: linear-gradient(to right, white, silver);
+    }
+    .form_pos{
+        display: flex;
+        justify-content: center;
+    }
+</style>
+<body>
+    <h1 style="text-align: center;">Log in</h1>
+    <div class="form_pos">
+    <form action="" >
+    <label for="email">Email</label>
+    <br>
+    <input type="text" id="email" placeholder="Email" required>
+
+    <br><br>
+    <label for="password">Password</label>
+    <br>
+    <input type="password" id="password" placeholder="Password" required>
+
+    <br><br>
+    <input type="submit" value="Submit" onclick="Submit()">
+    </form>
+    </div>
+    <h3 style="text-align: center;">Enter information to access your account.</h3>
+</body>
+</html>

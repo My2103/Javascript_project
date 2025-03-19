@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var input1, input2, num1, num2, sum;
+        input1 = prompt("Please enter a number", "0");
+        input2 = prompt("Please enter a number", "0");
+
+        // Check if the user click cancel
+        if (input1 === null || input2 === null) {
+            document.writeln("<h1>The sum is NaN</h1>");
+        } else {
+            num1 = parseFloat(input1);
+            num2 = parseFloat(input2);
+
+            // Check if the input in number
+            if (isNaN(num1) || isNaN(num2)) {
+                document.writeln("<h1>The sum is NaN</h1>");
+            } else {
+                sum = num1 + num2;
+                document.writeln("<h1>The sum is " + sum + "</h1>");
+            }
+        }
+    </script>
+</body>
+</html>

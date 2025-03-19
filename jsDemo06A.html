@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+</head>
+<body>
+    <script id="s1"> //Script with id s1
+        var userAge = "27";
+    </script>
+    <p>Our first JavaScript script</p>
+    <script id="s2"> //Script with id s2 user = "My"
+       var user = "My";
+       document.writeln("<p><b>Hello " + user + "<br>\nHello World!</b></p>");
+       document.writeln("(1)The value of userAge is: " + userAge + "<br>");
+       document.writeln("(2)This statement is executed<br>");
+       document.writeln("(3)The value of userAge is: " + userAge + "<br>");
+    </script>
+    <script id="s3"> //Script with id s3
+    </script>
+    <p>This is the rest of the page</p>
+    <!--Exercise 1-->
+    <script id="s4">
+        if(false) {
+            var y = 519;
+            document.writeln("The value of x is " + y + "<br>")
+        } else {
+            var x = 519;
+            document.writeln("The value of x is " + x + "<br>")
+        }
+    </script>
+    <noscript>JavaScript not supported or disable</noscript>
+</body>
+</html>

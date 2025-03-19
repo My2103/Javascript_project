@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function checkName(){
+            var myName = document.getElementById("cusName");
+
+            var pos = myName.value.search(/^[a-zA-Z]+, [a-zA-Z]+, [a-zA-Z]$/);
+
+            if(pos != 0){
+                alert("The name you entered (" + myName.value + ") is not the correct form.\n" + 
+                "The correct form is: last name, first name, middle initial.\n" + "Please go back and fix your name");
+                myName.focus();
+                myName.select();
+                return false;
+            } else {
+                return true;
+            }
+        }
+
+        function checkPhone(){
+            var myPhone = document.getElementById("cusPhone");
+            
+            var pos = myPhone.value.search(/^\d{3}-\d{3}-\d{4}$/);
+
+            if(pos != 0){
+                alert("The phone number you entered (" + myPhone.value + ") is no the correct form.\n" + 
+                "The correct form is: ddd-ddd-dddd\n" + "Please go back and fix your phone number");
+                myPhone.focus();
+                myPhone.select();
+                return false;
+
+            } else {
+                return true;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h3>Customer Information</h3>
+    <form>
+        <input type="text" id="cusName">
+        <label for="cusName">Name (last name, first name, middle initial)</label>
+        <br><br>
+        <input type="text" id="cusPhone">
+        <label for="cusPhone">Phone number (ddd-ddd-dddd)</label>
+        <br><br>
+        <input type="reset" name="reset">
+        <input type="submit" name="submit">
+    </form>
+
+    <script type="text/javascript">
+        document.getElementById("cusName").onchange = checkName;
+        document.getElementById("cusPhone").onchange = checkPhone;
+    </script>
+</body>
+</html>

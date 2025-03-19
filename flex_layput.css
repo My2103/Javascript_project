@@ -1,0 +1,16 @@
+a {
+    text-align: center;
+}
+
+nav {
+    background-color: lightgreen;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media all and (max-width: 900px) {
+    nav {
+        flex-direction: column;
+    }
+}
